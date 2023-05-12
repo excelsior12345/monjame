@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3dbdf !important;
+  margin: 0;
+  padding: 0;
+  font-size: 18px; /* Increase body font size */
+}
+
+header {
+  background-color: #f3dbdf;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  flex-grow: 1;
+}
+
+header .logo img {
+  max-width: 100px;
+  animation: logoAnimation 2s forwards;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Add smooth transition */
+}
+
+.carousel-inner,
+.carousel-item {
+  height: 50vh;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Make images cover the whole slide */
+}
+
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd; /* Add some space between sections */
+}
+
+.promo-container,
+.offer-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  overflow-x: auto;
+}
+
+.promo, .offer {
+  flex: 0 0 50%; 
+  margin: 10px;
+  vertical-align: top;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.promo img, .offer img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@keyframes logoAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0; /* Add some padding to the footer */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+form{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+form input{
+margin-top: 20px;
+}
